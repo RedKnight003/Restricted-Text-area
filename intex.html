@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A simple restricted textarea example that limits input to a specific set of characters."
+    />
+    <meta name="author" content="RedKnight" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Restricted Textarea</title>
+  </head>
+  <body>
+    <div class="container">
+      <p>Write Your Message</p>
+      <div class="textarea-wrapper">
+        <textarea
+          class="tab-1"
+          id="restrictedTextarea-1"
+          maxlength="250"
+          placeholder="Start typing...."
+        ></textarea>
+        <span class="counter" id="counter-1">0/250</span>
+      </div>
+      <div class="textarea-wrapper">
+        <textarea
+          class="tab-2"
+          id="restrictedTextarea-2"
+          maxlength="none"
+          placeholder="Start typing...."
+        ></textarea>
+        <span class="counter" id="counter-2">0/250</span>
+      </div>
+      <div class="textarea-wrapper">
+        <textarea
+          class="tab-3"
+          id="restrictedTextarea-3"
+          maxlength="250"
+          placeholder="Start typing...."
+        ></textarea>
+        <span class="counter" id="counter-3">0/250</span>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
